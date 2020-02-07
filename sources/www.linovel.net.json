@@ -1,0 +1,86 @@
+{
+    "name": "轻之文库",
+    "url": "www.linovel.net",
+    "category": 3,
+    "version": 100,
+    "search": {
+        "url": "https://www.linovel.net/search/?kw=${key}",
+        "charset": "utf-8",
+        "list": ".search-book",
+        "name": ".book-name",
+        "author": ".book-extra@match->(.+)(?= 丨)",
+        "cover": ".book-cover > img",
+        "summary": ".book-intro",
+        "detail": "a"
+    },
+    "detail": {
+        "name": ".book-title",
+        "author": ".novelist > .name > a",
+        "cover": ".book-cover > a > img",
+        "summary": ".about-text",
+        "status": "",
+        "update": ".book-last-update",
+        "lastChapter": "",
+        "catalog": "a@attr->href#catalog"
+    },
+    "catalog": {
+        "list": ".section-list > div",
+        "orderBy": 0,
+        "booklet": {
+            "name": ".volume-title",
+            "list": ".chapter"
+        },
+        "name": "a",
+        "chapter": "a@attr->href"
+    },
+    "chapter": {
+        "content": ".article-text > p"
+    },
+    "rank": [
+        {
+            "title":"重推榜",
+            "url": "https://www.linovel.net/list/top#zt?time=${key}&page=${page}",
+            "page": 1,
+            "size": 10,
+            "categories": [
+                {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
+            ],
+            "list": ".rank-book",
+            "name": ".book-name",
+            "author": ".book-extra@match->(.+)(?= 丨)",
+            "cover": ".book-cover > img",
+            "summary": ".book-intro",
+            "detail": ".book-buttons > a"
+        },
+        {
+            "title":"佳作榜",
+            "url": "https://www.linovel.net/list/top#jz?time=${key}&page=${page}",
+            "page": 1,
+            "size": 10,
+            "categories": [
+                {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
+            ],
+            "list": ".rank-book",
+            "name": ".book-name",
+            "author": ".book-extra@match->(.+)(?= 丨)",
+            "cover": ".book-cover > img",
+            "summary": ".book-intro",
+            "detail": ".book-buttons > a"
+        },
+        {
+            "title":"月票榜",
+            "url": "https://www.linovel.net/list/top#ticket?time=${key}&page=${page}",
+            "page": 1,
+            "size": 10,
+            "categories": [
+                {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
+            ],
+            "list": ".rank-book",
+            "name": ".book-name",
+            "author": ".book-extra@match->(.+)(?= 丨)",
+            "cover": ".book-cover > img",
+            "summary": ".book-intro",
+            "detail": ".book-buttons > a"
+        }
+    ]
+}
