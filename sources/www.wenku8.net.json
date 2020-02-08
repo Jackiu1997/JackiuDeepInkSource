@@ -51,7 +51,8 @@
                 {"key": "anime", "value": "动画化排行"},
                 {"key": "postdate", "value": "最新入库"}, {"key": "lastupdate", "value": "最近更新"},
                 {"key": "goodnum", "value": "总收藏榜"}, {"key": "size", "value": "字数排行"}
-            ]
+            ],
+            "summary": "div:nth-child(2) > p:nth-child(5)@match->(?<=简介:)(.+)"
         },
         {
             "title":"文库分类",
@@ -73,7 +74,8 @@
             "title":"完结全本",
             "url": "https://www.wenku8.net/modules/article/articlelist.php?fullflag=1",
             "page": 1,
-            "size": 20
+            "size": 20,
+            "summary": "div:nth-child(2) > p:nth-child(5)@match->(?<=简介:)(.+)"
         }
     ]
 }
