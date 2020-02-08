@@ -9,7 +9,6 @@
         "name": "li:nth-child(2) > strong",
         "author": "li:nth-child(2)@match->(?<=综合信息： )(.+)(?=/[0-9]{4}/)",
         "cover": "img",
-        "summary": "li:nth-child(2)@match->(?<=:[0-9]{2} )(.+)",
         "detail": "li:nth-child(2) > strong > a"
     },
     "detail": {

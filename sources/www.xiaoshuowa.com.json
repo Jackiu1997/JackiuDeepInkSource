@@ -9,7 +9,6 @@
         "name": "h3",
         "author": ".book_other > span:nth-child(1)",
         "cover": "img",
-        "summary": ".book_des",
         "detail": "h3 > a"
     },
     "detail": {

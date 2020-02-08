@@ -9,7 +9,6 @@
         "name": ".book-name",
         "author": ".book-extra@match->(.+)(?= 丨)",
         "cover": ".book-cover > img",
-        "summary": ".book-intro",
         "detail": "a"
     },
     "detail": {

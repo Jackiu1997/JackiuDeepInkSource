@@ -9,7 +9,6 @@
         "name": "div:nth-child(2) > b",
         "author": "div:nth-child(2) > p:nth-child(2)@match->(?<=作者:)(.+)(?=/分类)",
         "cover": "div:nth-child(1) > a > img",
-        "summary": "div:nth-child(2) > p:nth-child(3)@match->(?<=简介:)(.+)",
         "detail": "div:nth-child(1) > a"
     },
     "detail": {

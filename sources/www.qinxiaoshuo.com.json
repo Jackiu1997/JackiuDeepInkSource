@@ -9,7 +9,6 @@
         "name": ".item_name > a",
         "author": ".item_name > span",
         "cover": ".item_img > a > img",
-        "summary": ".item_intro",
         "detail": ".item_name > a"
     },
     "detail": {

@@ -9,7 +9,6 @@
         "name": "td.odd > a",
         "author": "td:nth-child(3)",
         "cover": "",
-        "summary": "",
         "detail": "td:nth-child(1) > a"
     },
     "detail": {

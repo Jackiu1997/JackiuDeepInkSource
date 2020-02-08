@@ -9,7 +9,6 @@
         "name": "li:nth-child(1) > a",
         "author": "li:nth-child(3)@match->(?=作者：)(.+)",
         "cover": "",
-        "summary": "",
         "detail": "li:nth-child(1) > a"
     },
     "detail": {

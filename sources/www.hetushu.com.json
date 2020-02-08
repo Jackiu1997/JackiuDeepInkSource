@@ -9,7 +9,6 @@
         "name": "dd > h4 > a",
         "author": "dd > h4 > span@match->(?<=/ )(.+)(?= /)",
         "cover": "dd > a > img",
-        "summary": ".intro",
         "detail": "dd > a"
     },
     "detail": {

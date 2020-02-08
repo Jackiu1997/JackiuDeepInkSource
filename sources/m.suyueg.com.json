@@ -9,7 +9,6 @@
         "name": ".sone > a",
         "author": ".sone > span",
         "cover": "",
-        "summary": "",
         "detail": ".sone > a"
     },
     "detail": {
