@@ -57,7 +57,8 @@
                 {"key": "26", "value": "都市"}, {"key": "27", "value": "游戏"},
                 {"key": "28", "value": "都市"}, {"key": "29", "value": "同人"}
             ],
-            "list": ".Comic_Pic_List"
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2)@match->(?<=作 者： )(.+) "
         },
         {
             "title":"完结轻小说",
@@ -71,7 +72,8 @@
                 {"key": "26", "value": "都市"}, {"key": "27", "value": "游戏"},
                 {"key": "28", "value": "都市"}, {"key": "29", "value": "同人"}
             ],
-            "list": ".Comic_Pic_List"
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2)@match->(?<=作 者： )(.+) "
         }
     ]
 }
