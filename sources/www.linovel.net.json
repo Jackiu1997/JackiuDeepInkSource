@@ -80,6 +80,51 @@
             "cover": "$.coverUrl",
             "summary": "$.about",
             "detail": "https://www.linovel.net/book/${$.id}.html"
+        },
+        {
+            "title":"轻币榜",
+            "url": "https://www.linovel.net/hub/getTopBooks?unit=coin&page=${page}&time=${key}",
+            "page": 1,
+            "size": 10,
+            "categories": [
+                {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
+            ],
+            "list": "$..books[*]",
+            "name": "$.name",
+            "author": "$.author",
+            "cover": "$.coverUrl",
+            "summary": "$.about",
+            "detail": "https://www.linovel.net/book/${$.id}.html"
+        },
+        {
+            "title":"墨水榜",
+            "url": "https://www.linovel.net/hub/getTopBooks?unit=ink&page=${page}&time=${key}",
+            "page": 1,
+            "size": 10,
+            "categories": [
+                {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
+            ],
+            "list": "$..books[*]",
+            "name": "$.name",
+            "author": "$.author",
+            "cover": "$.coverUrl",
+            "summary": "$.about",
+            "detail": "https://www.linovel.net/book/${$.id}.html"
+        },
+        {
+            "title":"应援榜",
+            "url": "https://www.linovel.net/hub/getTopBooks?unit=supp&page=${page}&time=${key}",
+            "page": 1,
+            "size": 10,
+            "categories": [
+                {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
+            ],
+            "list": "$..books[*]",
+            "name": "$.name",
+            "author": "$.author",
+            "cover": "$.coverUrl",
+            "summary": "$.about",
+            "detail": "https://www.linovel.net/book/${$.id}.html"
         }
     ]
 }
