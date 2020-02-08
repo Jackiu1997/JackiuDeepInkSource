@@ -1,0 +1,42 @@
+{
+    "name": "亲小说",
+    "url": "www.qinxiaoshuo.com",
+    "category": 3,
+    "version": 100,
+    "search": {
+        "url": "https://www.qinxiaoshuo.com/search/?keyword=${key}",
+        "charset": "utf-8",
+        "list": ".book_item",
+        "name": ".item_name > a",
+        "author": ".item_name > span",
+        "cover": ".item_img > a > img",
+        "summary": ".item_intro",
+        "detail": ".item_name > a"
+    },
+    "detail": {
+        "name": ".book_name",
+        "author": "#book_info_right > p:nth-child(4) > a@match->(?<=状态：)(.+)",
+        "cover": "book_img@attr->src",
+        "summary": ".book_intro",
+        "status": "#book_info_right > p:nth-child(5)",
+        "update": "#branches > div > div.branch_head > div.head_left > p:nth-child(2)@match->(?<=更新时间:)(.+)",
+        "lastChapter": "#branches > div > div.branch_head > div.head_left > p:nth-child(3)@match->(?<=最新章节:)(.+)",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".volume",
+        "orderBy": 0,
+        "booklet": {
+            "name": ".volume_title",
+            "list": ".chapters > a"
+        },
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#chapter_content",
+        "page": {
+            "url": ".buttons > p > a:matches(下一页)"
+        }
+    }
+}
