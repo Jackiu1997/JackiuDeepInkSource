@@ -1,0 +1,38 @@
+{
+    "name": "小说娃小说",
+    "url": "www.xiaoshuowa.com",
+    "category": 1,
+    "version": 100,
+    "search": {
+        "url": "https://www.xiaoshuowa.com/search.html@post->searchtype=all&searchkey=${key}",
+        "charset": "utf-8",
+        "list": "div#sitembox > dl",
+        "name": "h3",
+        "author": ".book_other > span:nth-child(1)",
+        "cover": "img",
+        "summary": ".book_des",
+        "detail": "h3 > a"
+    },
+    "detail": {
+        "name": "#info > h1",
+        "author": "#info > p:contains(作 者)@match->(?<=作 者：)(.+)",
+        "cover": "#fmimg > img",
+        "summary": "#intro > p:nth-child(1)",
+        "status": "",
+        "update": "#info > p:nth-child(4)@match->(?<=更新：)(.+)",
+        "lastChapter": "#info > p:nth-child(5) > a",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "#list > dl > dd:gt(12) > a",
+        "orderBy": 0,
+        "name": "a",
+        "chapter": "a@attr->href"
+    },
+    "chapter": {
+        "content": "#content > p",
+        "page": {
+            "url": ".bottem2 > a:nth-child(4):matches(下一页)"
+        }
+    }
+}
