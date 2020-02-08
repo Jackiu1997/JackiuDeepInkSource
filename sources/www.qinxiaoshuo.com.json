@@ -1,7 +1,6 @@
 {
     "name": "亲小说",
     "url": "www.qinxiaoshuo.com",
-    "category": 3,
     "version": 100,
     "search": {
         "url": "https://www.qinxiaoshuo.com/search/?keyword=${key}",

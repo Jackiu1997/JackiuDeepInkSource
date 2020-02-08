@@ -1,7 +1,6 @@
 {
     "name": "轻之文库",
     "url": "www.linovel.net",
-    "category": 3,
     "version": 100,
     "search": {
         "url": "https://www.linovel.net/search/?kw=${key}",
