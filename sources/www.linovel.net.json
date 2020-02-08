@@ -44,12 +44,12 @@
             "categories": [
                 {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
             ],
-            "list": ".rank-book",
+            "list": ".rank-content > .ranking-list:nth-child(2) > ul:nth-child(1) >  li",
             "name": ".book-name",
             "author": ".book-extra@match->(.+)(?= 丨)",
             "cover": ".book-cover > img",
             "summary": ".book-intro",
-            "detail": ".book-buttons > a"
+            "detail": "a"
         },
         {
             "title":"佳作榜",
@@ -59,12 +59,12 @@
             "categories": [
                 {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
             ],
-            "list": ".rank-book",
+            "list": ".rank-content > .ranking-list:nth-child(2) > ul:nth-child(1) >  li",
             "name": ".book-name",
             "author": ".book-extra@match->(.+)(?= 丨)",
             "cover": ".book-cover > img",
             "summary": ".book-intro",
-            "detail": ".book-draw .book-buttons > a"
+            "detail": "a"
         },
         {
             "title":"月票榜",
