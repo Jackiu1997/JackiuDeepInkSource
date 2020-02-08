@@ -1,7 +1,6 @@
 {
     "name": "小说娃小说",
     "url": "www.xiaoshuowa.com",
-    "category": 1,
     "version": 100,
     "search": {
         "url": "https://www.xiaoshuowa.com/search.html@post->searchtype=all&searchkey=${key}",
