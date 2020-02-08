@@ -38,48 +38,45 @@
     "rank": [
         {
             "title":"重推榜",
-            "url": "https://www.linovel.net/list/top#zt?time=${key}&page=${page}",
+            "url": "https://www.linovel.net/hub/getTopBooks?unit=zt&page=${page}&time=${key}",
             "page": 1,
             "size": 10,
             "categories": [
                 {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
             ],
-            "list": ".rank-content > .ranking-list:nth-child(2) > ul:nth-child(1) >  li",
-            "name": ".book-name",
-            "author": ".book-extra@match->(.+)(?= 丨)",
-            "cover": ".book-cover > img",
-            "summary": ".book-intro",
-            "detail": "a"
+            "list": "$..books[*]",
+            "name": "$.name",
+            "author": "$.author",
+            "cover": "$.coverUrl",
+            "summary": "$.about"
         },
         {
             "title":"佳作榜",
-            "url": "https://www.linovel.net/list/top#jz?time=${key}&page=${page}",
+            "url": "https://www.linovel.net/hub/getTopBooks?unit=jz&page=${page}&time=${key}",
             "page": 1,
             "size": 10,
             "categories": [
                 {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
             ],
-            "list": ".rank-content > .ranking-list:nth-child(2) > ul:nth-child(1) >  li",
-            "name": ".book-name",
-            "author": ".book-extra@match->(.+)(?= 丨)",
-            "cover": ".book-cover > img",
-            "summary": ".book-intro",
-            "detail": "a"
+            "list": "$..books[*]",
+            "name": "$.name",
+            "author": "$.author",
+            "cover": "$.coverUrl",
+            "summary": "$.about"
         },
         {
             "title":"月票榜",
-            "url": "https://www.linovel.net/list/top#ticket?time=${key}&page=${page}",
+            "url": "https://www.linovel.net/hub/getTopBooks?unit=ticket&page=${page}&time=${key}",
             "page": 1,
             "size": 10,
             "categories": [
                 {"key": "week", "value": "周排行"}, {"key": "month", "value": "月排行"}, {"key": "new", "value": "新书排行"}
             ],
-            "list": ".rank-book",
-            "name": ".book-name",
-            "author": ".book-extra@match->(.+)(?= 丨)",
-            "cover": ".book-cover > img",
-            "summary": ".book-intro",
-            "detail": ".book-draw .book-buttons > a"
+            "list": "$..books[*]",
+            "name": "$.name",
+            "author": "$.author",
+            "cover": "$.coverUrl",
+            "summary": "$.about"
         }
     ]
 }
