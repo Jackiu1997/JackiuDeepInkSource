@@ -1,7 +1,6 @@
 {
     "name": "悟空看书",
     "url": "www.wkkshu.com",
-    "category": 1,
     "version": 100,
     "search": {
         "url": "https://www.wkkshu.com/modules/article/search.php?action=login&searchkey=${key}",
