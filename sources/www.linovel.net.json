@@ -48,7 +48,8 @@
             "name": "$.name",
             "author": "$.author",
             "cover": "$.coverUrl",
-            "summary": "$.about"
+            "summary": "$.about",
+            "detail": "https://www.linovel.net/book/${$.id}.html"
         },
         {
             "title":"佳作榜",
@@ -62,7 +63,8 @@
             "name": "$.name",
             "author": "$.author",
             "cover": "$.coverUrl",
-            "summary": "$.about"
+            "summary": "$.about",
+            "detail": "https://www.linovel.net/book/${$.id}.html"
         },
         {
             "title":"月票榜",
@@ -76,7 +78,8 @@
             "name": "$.name",
             "author": "$.author",
             "cover": "$.coverUrl",
-            "summary": "$.about"
+            "summary": "$.about",
+            "detail": "https://www.linovel.net/book/${$.id}.html"
         }
     ]
 }
