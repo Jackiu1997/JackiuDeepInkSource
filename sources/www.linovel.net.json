@@ -64,7 +64,7 @@
             "author": ".book-extra@match->(.+)(?= 丨)",
             "cover": ".book-cover > img",
             "summary": ".book-intro",
-            "detail": ".book-buttons > a"
+            "detail": ".book-draw .book-buttons > a"
         },
         {
             "title":"月票榜",
@@ -79,7 +79,7 @@
             "author": ".book-extra@match->(.+)(?= 丨)",
             "cover": ".book-cover > img",
             "summary": ".book-intro",
-            "detail": ".book-buttons > a"
+            "detail": ".book-draw .book-buttons > a"
         }
     ]
 }
