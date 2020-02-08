@@ -58,7 +58,7 @@
                 {"key": "28", "value": "都市"}, {"key": "29", "value": "同人"}
             ],
             "list": ".Comic_Pic_List",
-            "author": ".Comic_Pic_List > li:nth-child(2)@match->(?<=作 者： )(.+) "
+            "author": ".Comic_Pic_List > li:nth-child(2)@match->(?<=作 者： )(.+)(?= 综合信息)"
         },
         {
             "title":"完结轻小说",
@@ -73,7 +73,7 @@
                 {"key": "28", "value": "都市"}, {"key": "29", "value": "同人"}
             ],
             "list": ".Comic_Pic_List",
-            "author": ".Comic_Pic_List > li:nth-child(2)@match->(?<=作 者： )(.+) "
+            "author": ".Comic_Pic_List > li:nth-child(2)@match->(?<=作 者： )(.+)(?= 综合信息)"
         }
     ]
 }
