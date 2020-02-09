@@ -25,7 +25,10 @@
         "list": ".chapters > li",
         "orderBy": 0,
         "name": "a",
-        "chapter": "a@attr->href"
+        "chapter": "a@attr->href",
+        "page": {
+            "url": ".page > a:nth-child(1):matches(下一页)"
+        }
     },
     "chapter": {
         "content": "#novelcontent"
