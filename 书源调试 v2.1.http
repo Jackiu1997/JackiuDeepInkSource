@@ -3,8 +3,8 @@
 @hostname = http://192.168.1.3
 @port = 8888
 @host = {{hostname}}:{{port}}
-@json = sources/www.168kanshu.com.json
-@key = 文明：超越两界
+@json = sources/www.x23qb.com.json
+@key = OVERLORD
 
 # 特别注意：不要删除此模板中任意一个空行！
 # 需要下载 REST Client 插件（Vscode）
