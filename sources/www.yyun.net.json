@@ -1,0 +1,36 @@
+{
+    "name": "烟云小说 [刺猬猫]",
+    "url": "www.yyun.net",
+    "version": 100,
+    "search": {
+        "url": "https://www.yyun.net/modules/article/search.php@post->searchkey=${key}",
+        "charset": "gbk",
+        "list": "#author > tbody > tr:gt(1)",
+        "name": "td:nth-child(1) > a",
+        "author": "td:nth-child(3)",
+        "cover": "",
+        "detail": "td:nth-child(1) > a"
+    },
+    "detail": {
+        "name": ".introduce > h1",
+        "author": ".introduce > p.bq > span:nth-child(2)@replace->作者：",
+        "cover": ".pic > img",
+        "summary": ".introduce > p.jj",
+        "status": ".introduce > p.bq > span:nth-child(3)",
+        "update": ".introduce > p.bq > span:nth-child(1)@replace->更新：",
+        "lastChapter": ".introduce > p:nth-child(5) > a > strong",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".ml_list > .bb_drr > ul > li",
+        "orderBy": 0,
+        "name": "a",
+        "chapter": "a@attr->href"
+    },
+    "chapter": {
+        "content": ".novelcontent",
+        "filter": [
+            "table"
+        ]
+    }
+}

@@ -3,8 +3,8 @@
 @hostname = http://192.168.1.3
 @port = 8888
 @host = {{hostname}}:{{port}}
-@json = sources/www.x23qb.com.json
-@key = OVERLORD
+@json = sources/www.yyun.net.json
+@key = 型月无间道
 
 # 特别注意：不要删除此模板中任意一个空行！
 # 需要下载 REST Client 插件（Vscode）
