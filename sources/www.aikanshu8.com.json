@@ -1,6 +1,6 @@
 {
     "name": "爱看书吧 [飞卢]",
-    "url": "m.aikanshu8.com",
+    "url": "www.aikanshu8.com",
     "version": 100,
     "search": {
         "url": "https://www.aikanshu8.com/modules/article/search.php?searchkey=${key}",
