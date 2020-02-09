@@ -52,6 +52,33 @@
             "author": ".Comic_Pic_List > li:nth-child(2) > a"
         },
         {
+            "title": "月度月票榜",
+            "url": "http://book.sfacg.com/rank/",
+            "page": 1,
+            "size": 20,
+            "list": "ul.bd_PHB:nth-child(1) > li:gt(1)",
+            "name": "span > a",
+            "detail": "span > a"
+        },
+        {
+            "title": "月度打赏榜",
+            "url": "http://book.sfacg.com/rank/",
+            "page": 1,
+            "size": 20,
+            "list": "ul.bd_PHB:nth-child(2) > li:gt(1)",
+            "name": "span > a",
+            "detail": "span > a"
+        },
+        {
+            "title": "月度热销榜",
+            "url": "http://book.sfacg.com/rank/",
+            "page": 1,
+            "size": 20,
+            "list": "ul.bd_PHB:nth-child(3) > li:gt(1)",
+            "name": "span > a",
+            "detail": "span > a"
+        },
+        {
             "title": "魔幻",
             "url": "http://book.sfacg.com/List/default.aspx?tid=21&PageIndex=${page}",
             "page": 1,
