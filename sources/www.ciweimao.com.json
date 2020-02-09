@@ -8,7 +8,7 @@
         "list": ".rank-book-list > ul > li",
         "name": ".cnt > p:nth-child(1) > a",
         "author": ".cnt > p:nth-child(2) > a",
-        "cover": "img",
+        "cover": ".cover > img",
         "summary": ".desc",
         "detail": ".cnt > p:nth-child(1) > a"
     },
@@ -34,14 +34,6 @@
     },
     "chapter": {
         "content": "#J_BookRead > p"
-    },
-    "auth": {
-        "login": "https://passport.sfacg.com/Login.aspx",
-        "cookie": "sfacg.com",
-        "verify": "https://passport.sfacg.com/",
-        "logged": "#UserInfo > a:nth-child(4)@equal->退出",
-        "vip": "#article > .pay-section > .pay-bar > p.text@equal->本书以下章节需要付费阅读，请支持作者的汗血耕耘！",
-        "buy": "#orderSingle@equal->订阅本章"
     },
     "rank": [
         {
