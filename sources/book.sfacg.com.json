@@ -44,7 +44,87 @@
     },
     "rank": [
         {
-            "title":"连载轻小说",
+            "title":"全部",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=-1&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title": "魔幻",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=21&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title": "玄幻",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=22&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title": "古风",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=23&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title": "科幻",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=24&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title": "校园",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=25&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title": "都市",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=26&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title": "游戏",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=27&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title": "同人",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=28&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title": "悬疑",
+            "url": "http://book.sfacg.com/List/default.aspx?tid=29&PageIndex=${page}",
+            "page": 1,
+            "size": 20,
+            "list": ".Comic_Pic_List",
+            "author": ".Comic_Pic_List > li:nth-child(2) > a"
+        },
+        {
+            "title":"连载",
             "url": "http://book.sfacg.com/List/default.aspx?tid=${key}&&if=0&PageIndex=${page}",
             "page": 1,
             "size": 20,
@@ -53,13 +133,13 @@
                 {"key": "22", "value": "玄幻"}, {"key": "23", "value": "古风"}, 
                 {"key": "24", "value": "科幻"}, {"key": "25", "value": "校园"}, 
                 {"key": "26", "value": "都市"}, {"key": "27", "value": "游戏"},
-                {"key": "28", "value": "都市"}, {"key": "29", "value": "同人"}
+                {"key": "28", "value": "同人"}, {"key": "29", "value": "悬疑"}
             ],
             "list": ".Comic_Pic_List",
             "author": ".Comic_Pic_List > li:nth-child(2) > a"
         },
         {
-            "title":"完结轻小说",
+            "title":"完结",
             "url": "http://book.sfacg.com/List/default.aspx?tid=${key}&&if=1&PageIndex=${page}",
             "page": 1,
             "size": 20,
@@ -68,7 +148,7 @@
                 {"key": "22", "value": "玄幻"}, {"key": "23", "value": "古风"},
                 {"key": "24", "value": "科幻"}, {"key": "25", "value": "校园"},
                 {"key": "26", "value": "都市"}, {"key": "27", "value": "游戏"},
-                {"key": "28", "value": "都市"}, {"key": "29", "value": "同人"}
+                {"key": "28", "value": "同人"}, {"key": "29", "value": "悬疑"}
             ],
             "list": ".Comic_Pic_List",
             "author": ".Comic_Pic_List > li:nth-child(2) > a"
