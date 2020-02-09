@@ -28,9 +28,6 @@
         "chapter": "a@attr->href"
     },
     "chapter": {
-        "content": "#TextContent",
-        "page": {
-            "url": "p.mlfy_page > a:nth-child(5):matches(下一页)"
-        }
+        "content": "#TextContent"
     }
 }
