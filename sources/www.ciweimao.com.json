@@ -47,6 +47,7 @@
             "list": ".rank-book-list > li",
             "name": ".tit > a",
             "author": ".cnt > p:nth-child(2) > a",
+            "cover": ".cover > img@attr->data-original",
             "detail": ".tit > a"
         },
         {
@@ -60,6 +61,7 @@
             "list": ".rank-book-list > li",
             "name": ".tit > a",
             "author": ".cnt > p:nth-child(2) > a",
+            "cover": ".cover > img@attr->data-original",
             "detail": ".tit > a"
         },
         {
@@ -73,6 +75,7 @@
             "list": ".rank-book-list > li",
             "name": ".tit > a",
             "author": ".cnt > p:nth-child(2) > a",
+            "cover": ".cover > img@attr->data-original",
             "detail": ".tit > a"
         },
         {
@@ -86,6 +89,7 @@
             "list": ".rank-book-list > li",
             "name": ".tit > a",
             "author": ".cnt > p:nth-child(2) > a",
+            "cover": ".cover > img@attr->data-original",
             "detail": ".tit > a"
         },
         {
@@ -99,6 +103,7 @@
             "list": ".rank-book-list > li",
             "name": ".tit > a",
             "author": ".cnt > p:nth-child(2) > a",
+            "cover": ".cover > img@attr->data-original",
             "detail": ".tit > a"
         },
         {
@@ -112,6 +117,7 @@
             "list": ".rank-book-list > li",
             "name": ".tit > a",
             "author": ".cnt > p:nth-child(2) > a",
+            "cover": ".cover > img@attr->data-original",
             "detail": ".tit > a"
         },
         {
@@ -125,6 +131,7 @@
             "list": ".rank-book-list > li",
             "name": ".tit > a",
             "author": ".cnt > p:nth-child(2) > a",
+            "cover": ".cover > img@attr->data-original",
             "detail": ".tit > a"
         },
         {
@@ -138,6 +145,7 @@
             "list": ".rank-book-list > li",
             "name": ".tit > a",
             "author": ".cnt > p:nth-child(2) > a",
+            "cover": ".cover > img@attr->data-original",
             "detail": ".tit > a"
         },
         {
@@ -151,6 +159,7 @@
             "list": ".rank-book-list > li",
             "name": ".tit > a",
             "author": ".cnt > p:nth-child(2) > a",
+            "cover": ".cover > img@attr->data-original",
             "detail": ".tit > a"
         }
     ]
