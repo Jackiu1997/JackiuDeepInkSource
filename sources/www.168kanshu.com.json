@@ -1,0 +1,35 @@
+{
+    "name": "168看书网 [刺猬猫]",
+    "url": "www.168kanshu.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.168kanshu.com/modules/article/search.php?action=login&searchkey=${key}",
+        "charset": "gbk",
+        "list": ".toplist >ul > li",
+        "name": ".s1 > a",
+        "author": ".s3",
+        "detail": ".s1 > a"
+    },
+    "detail": {
+        "name": "#info > h1",
+        "author": "#info > .options > span:nth-child(1)",
+        "cover": ".book_info > .pic > img",
+        "summary": ".bookinfo_intro",
+        "status": "",
+        "update": "#info > .options > span:nth-child(2)",
+        "lastChapter": "#info > .update > a",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".book_list > ul > li",
+        "orderBy": 0,
+        "name": "a",
+        "chapter": "a@attr->href"
+    },
+    "chapter": {
+        "content": "#htmlContent",
+        "page": {
+            "url": ".chapter_Turnpage > a.next:matches(下一页)"
+        }
+    }
+}
