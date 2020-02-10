@@ -19,18 +19,15 @@
         "status": "",
         "update": ".infotype > p:nth-child(3)@match->(?<=时间：)(.+)",
         "lastChapter": ".infotype > p:nth-child(4) > a",
-        "catalog": ".gochapter > a"
+        "catalog": ".gochapter > a@replace->m.suyueg->www.suyueg"
     },
     "catalog": {
-        "list": ".chapters > li",
+        "list": "ul.chapters > li",
         "orderBy": 0,
         "name": "a",
-        "chapter": "a@attr->href",
-        "page": {
-            "url": ".page > a:nth-child(1):matches(下一页)"
-        }
+        "chapter": "a@attr->href"
     },
     "chapter": {
-        "content": "#novelcontent"
+        "content": "#articlecontent"
     }
 }
