@@ -28,8 +28,6 @@
     },
     "chapter": {
         "content": "#htmlContent",
-        "page": {
-            "url": ".chapter_Turnpage > a.next:matches(下一页)"
-        }
+        "page": ".chapter_Turnpage > a.next:matches(下一页)"
     }
 }

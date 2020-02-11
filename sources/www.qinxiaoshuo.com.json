@@ -33,8 +33,6 @@
     },
     "chapter": {
         "content": "#chapter_content",
-        "page": {
-            "url": ".buttons > p > a:matches(下一页)"
-        }
+        "page": ".buttons > p > a:matches(下一页)"
     }
 }

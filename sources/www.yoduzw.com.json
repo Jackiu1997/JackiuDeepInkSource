@@ -32,8 +32,6 @@
         "filter": [
             "@center:contains(本章未完)"
         ],
-        "page": {
-            "url": "#readbg > p > a:matches(下一页)"
-        }
+        "page": "#readbg > p > a:matches(下一页)"
     }
 }

@@ -29,8 +29,6 @@
     },
     "chapter": {
         "content": "#content > p",
-        "page": {
-            "url": ".bottem2 > a:nth-child(4):matches(下一页)"
-        }
+        "page": ".bottem2 > a:nth-child(4):matches(下一页)"
     }
 }
