@@ -14,7 +14,7 @@
     },
     "detail": {
         "name": ".book_info > h2",
-        "author": ".book_info > div:nth-child(3)@replace->作者： ",
+        "author": ".book_info > div:nth-child(3)@replace->作者：",
         "cover": ".book_info > img",
         "summary": ".intro",
         "status": "完结",
