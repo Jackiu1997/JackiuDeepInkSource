@@ -9,7 +9,6 @@
         "name": "h3 > a",
         "author": "em > span:nth-child(4)",
         "cover": "a > img",
-        "summary": "p.fs16.mb10.c_strong.g_ells",
         "detail": "h3 > a"
     },
     "detail": {
