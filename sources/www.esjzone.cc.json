@@ -32,5 +32,20 @@
         "filter": [
             "@p.t"
         ]
-    }
+    },
+    "rank": [
+        {
+            "title": "热门推荐",
+            "url": "https://www.esjzone.cc/list.html",
+            "page": 1,
+            "size": 20
+        },
+        {
+            "title": "近期更新",
+            "url": "https://www.esjzone.cc/update/",
+            "page": 1,
+            "size": 20,
+            "list": ".tab-content > div > div"
+        }
+    ]
 }
