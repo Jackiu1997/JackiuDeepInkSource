@@ -20,7 +20,7 @@
         "status": ".update-state",
         "update": "p.update-time@match->(?<=\\[ )(.+)(?= \\])",
         "lastChapter": "p.update-time@match->(?<=更新：)(.+)(?= \\[)",
-        "catalog": ".book-info > div > a:nth-child(1)@attr->href"
+        "catalog": ".book-info > div > a:nth-child(1)"
     },
     "catalog": {
         "list": ".book-chapter-box",
@@ -30,7 +30,7 @@
             "list": ".book-chapter-list > li"
         },
         "name": "a",
-        "chapter": "a@attr->href"
+        "chapter": "a"
     },
     "chapter": {
         "content": "#J_BookRead > p"

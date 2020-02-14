@@ -29,7 +29,7 @@
             "list": ".chapter"
         },
         "name": "a",
-        "chapter": "a@attr->href"
+        "chapter": "a"
     },
     "chapter": {
         "content": ".article-text > p"

@@ -25,7 +25,7 @@
         "list": "#chapterList > li",
         "orderBy": 0,
         "name": "a",
-        "chapter": "a@attr->href"
+        "chapter": "a"
     },
     "chapter": {
         "content": "#TextContent",

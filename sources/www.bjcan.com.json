@@ -26,7 +26,7 @@
         "list": ".book-info > div:contains(章节列表) > ul > li",
         "orderBy": 0,
         "name": "a",
-        "chapter": "a@attr->href"
+        "chapter": "a"
     },
     "chapter": {
         "content": ".read-content > p"

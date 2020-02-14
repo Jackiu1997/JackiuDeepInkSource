@@ -24,10 +24,13 @@
         "list": ".book_list > ul > li",
         "orderBy": 0,
         "name": "a",
-        "chapter": "a@attr->href"
+        "chapter": "a"
     },
     "chapter": {
         "content": "#htmlContent",
+        "filter": [
+            "@center"
+        ],
         "page": ".chapter_Turnpage > a.next:matches(下一页)"
     }
 }

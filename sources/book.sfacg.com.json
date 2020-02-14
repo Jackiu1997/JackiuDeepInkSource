@@ -19,7 +19,7 @@
         "status": ".count-detail > div:nth-child(1) > span:nth-child(2)@match->(?<=\\[)(.+)(?=\\])",
         "update": ".count-detail > div:nth-child(2) > span@match->(?<=更新：)(.+)",
         "lastChapter": ".chapter-info > h3 > a",
-        "catalog": ".btn-row > a:nth-child(1)@attr->href"
+        "catalog": ".btn-row > a:nth-child(1)"
     },
     "catalog": {
         "list": ".story-catalog",
@@ -29,7 +29,7 @@
             "list": "li"
         },
         "name": "a@attr->title",
-        "chapter": "a@attr->href"
+        "chapter": "a"
     },
     "chapter": {
         "content": ".article-content"

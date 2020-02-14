@@ -25,7 +25,7 @@
         "list": "#list > dl > dd:gt(12) > a",
         "orderBy": 0,
         "name": "a",
-        "chapter": "a@attr->href"
+        "chapter": "a"
     },
     "chapter": {
         "content": "#content > p",
