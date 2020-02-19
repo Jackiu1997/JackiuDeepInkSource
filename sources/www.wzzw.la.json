@@ -5,7 +5,7 @@
     "search": {
         "url": "http://www.wzzw.la/search.htm?keyword=${key}",
         "charset": "utf-8",
-        "list": "#novel-list > ul > li:gt(1)",
+        "list": "#novel-list > ul > li:gt(0)",
         "name": "div:nth-child(2) > a",
         "author": "div:nth-child(4)",
         "cover": "",

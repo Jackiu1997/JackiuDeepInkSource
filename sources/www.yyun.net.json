@@ -5,7 +5,7 @@
     "search": {
         "url": "https://www.yyun.net/modules/article/search.php@post->searchkey=${key}",
         "charset": "gbk",
-        "list": "#author > tbody > tr:gt(1)",
+        "list": "#author > tbody > tr:gt(0)",
         "name": "td:nth-child(1) > a",
         "author": "td:nth-child(3)",
         "cover": "",
