@@ -13,8 +13,8 @@
     },
     "detail": {
         "status": "span.tag > i:nth-child(1)",
-        "update": ".update > p > a",
-        "lastChapter": ".update > p > span",
+        "update": ".update > p > span",
+        "lastChapter": ".update > p > a@replace->更新至 ",
         "catalog": "${url}#Catalog"
     },
     "catalog": {
