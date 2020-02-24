@@ -1,7 +1,7 @@
 {
     "name": "红袖添香",
     "url": "m.hongxiu.com",
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "https://m.hongxiu.com/search?kw=${key}",
         "list": "#books-0 > li",
