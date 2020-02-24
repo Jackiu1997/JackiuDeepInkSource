@@ -1,12 +1,17 @@
 {
     "name": "红袖添香",
-    "url": "www.hongxiu.com",
+    "url": "m.hongxiu.com",
     "version": 100,
+    "search": {
+        "url": "https://m.hongxiu.com/search?kw=${key}",
+        "list": "#books-0 > li",
+        "name": "h4.book-title",
+        "author": "span.book-author",
+        "cover": "img",
+        "summary": "p.book-desc",
+        "detail": "a@attr->href@replace->m.hongxiu->www.hongxiu"
+    },
     "detail": {
-        "name": ".book-info > h1 > em",
-        "author": ".book-info > h1 > a@replace-> 著",
-        "cover": ".book-img > a > img",
-        "summary": "p.intro",
         "status": "span.tag > i:nth-child(1)",
         "update": ".update > p > a",
         "lastChapter": ".update > p > span",
@@ -23,6 +28,13 @@
     },
     "chapter": {
         "content": "div.read-content"
+    },
+    "auth": {
+        "login": "https://passport.yuewen.com/yuewen.html",
+        "cookie": "hongxiu.com",
+        "verify": "https://m.hongxiu.com/user",
+        "logged": "#logout@equal->退出登录",
+        "vip": "a.j_subscribeBtn > em@equal->订阅本章"
     },
     "rank": [
         {
