@@ -1,0 +1,115 @@
+{
+    "name": "不可能de世界",
+    "url": "www.8kana.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.8kana.com/www/search@post->keyword=${key}&type=1",
+        "list": ".results_details > div",
+        "name": ".results_del_R_book > a",
+        "author": ".results_del_R_writer > a",
+        "cover": ".results_del_L > a > img",
+        "summary": "p.results_del_R_text",
+        "detail": ".results_del_L > a"
+    },
+    "detail": {
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".mainList",
+        "orderBy": 0,
+        "booklet": {
+            "name": ".mainListTop > div > span",
+            "list": "ul > li"
+        },
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".myContent"
+    },
+    "auth": {
+        "login": "https://www.8kana.com/www/passport/login",
+        "cookie": "8kanna.com",
+        "verify": "https://www.8kana.com/",
+        "logged": "#out@equal->退出登录",
+        "vip": "#msg@equal->开通VIP，本小说免费看"
+    },
+    "rank": [
+        {
+            "title":"热度榜",
+            "url": "https://www.8kana.com/www/rank/list/${key}",
+            "categories": [{"key": "5-0", "value": "总榜"}, {"key": "5-1", "value": "月榜"}, {"key": "5-1", "value": "周榜"}],
+            "list": "#rank-all > div > div > div > a",
+            "name": ".newchannelranking_nameIn",
+            "author": ".newchannelranking_authorName1",
+            "cover": ".newchannelranking_sevenMain_Cover > img",
+            "summary": ".newchannelranking_authorName",
+            "detail": "a"
+        },
+        {
+            "title":"打赏榜",
+            "url": "https://www.8kana.com/www/rank/list/${key}",
+            "categories": [{"key": "6-0", "value": "总榜"}, {"key": "6-1", "value": "月榜"}, {"key": "6-1", "value": "周榜"}],
+            "list": "#rank-all > div > div > div > a",
+            "name": ".newchannelranking_nameIn",
+            "author": ".newchannelranking_authorName1",
+            "cover": ".newchannelranking_sevenMain_Cover > img",
+            "summary": ".newchannelranking_authorName",
+            "detail": "a"
+        },
+        {
+            "title":"订阅榜",
+            "url": "https://www.8kana.com/www/rank/list/${key}",
+            "categories": [{"key": "7-0", "value": "总榜"}, {"key": "7-1", "value": "月榜"}, {"key": "7-1", "value": "周榜"}],
+            "list": "#rank-all > div > div > div > a",
+            "name": ".newchannelranking_nameIn",
+            "author": ".newchannelranking_authorName1",
+            "cover": ".newchannelranking_sevenMain_Cover > img",
+            "summary": ".newchannelranking_authorName",
+            "detail": "a"
+        },
+        {
+            "title":"月票榜",
+            "url": "https://www.8kana.com/www/rank/list/${key}",
+            "categories": [{"key": "1", "value": "当月"}, {"key": "1-0", "value": "总榜"}],
+            "list": "#rank-all > div > div > div > a",
+            "name": ".newchannelranking_nameIn",
+            "author": ".newchannelranking_authorName1",
+            "cover": ".newchannelranking_sevenMain_Cover > img",
+            "summary": ".newchannelranking_authorName",
+            "detail": "a"
+        },
+        {
+            "title":"风云榜",
+            "url": "https://www.8kana.com/www/rank/list/${key}",
+            "categories": [{"key": "3", "value": "当月"}, {"key": "3-0", "value": "总榜"}],
+            "list": "#rank-all > div > div > div > a",
+            "name": ".newchannelranking_nameIn",
+            "author": ".newchannelranking_authorName1",
+            "cover": ".newchannelranking_sevenMain_Cover > img",
+            "summary": ".newchannelranking_authorName",
+            "detail": "a"
+        },
+        {
+            "title":"新作榜",
+            "url": "https://www.8kana.com/www/rank/list/2",
+            "list": "#rank-all > div > div > div > a",
+            "name": ".newchannelranking_nameIn",
+            "author": ".newchannelranking_authorName1",
+            "cover": ".newchannelranking_sevenMain_Cover > img",
+            "summary": ".newchannelranking_authorName",
+            "detail": "a"
+        },
+        {
+            "title":"授权热书榜",
+            "url": "https://www.8kana.com/www/rank/list/4",
+            "list": "#rank-all > div > div > div > a",
+            "name": ".newchannelranking_nameIn",
+            "author": ".newchannelranking_authorName1",
+            "cover": ".newchannelranking_sevenMain_Cover > img",
+            "summary": ".newchannelranking_authorName",
+            "detail": "a"
+        }
+        
+    ]
+}
