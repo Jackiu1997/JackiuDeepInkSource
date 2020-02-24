@@ -7,7 +7,7 @@
         "list": "#books-0 > li",
         "name": "h4.book-title",
         "author": "span.book-author",
-        "cover": "img",
+        "cover": "img@attr->data-src",
         "summary": "p.book-desc",
         "detail": "a@attr->href@replace->m.hongxiu->www.hongxiu"
     },
