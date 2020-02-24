@@ -30,7 +30,7 @@
         "content": "div.read-content"
     },
     "auth": {
-        "login": "https://passport.yuewen.com/yuewen.html",
+        "login": "https://passport.yuewen.com/yuewen.html?appid=41&areaid=2&autotime=30&source=m&version=1.0&ticket=1&unionshow=110&returnurl=https%3A%2F%2Fm.hongxiu.com%2FloginSuccess%3FjumpUrl%3Dhttps%253A%252F%252Fm.hongxiu.com%252Fuser",
         "cookie": "hongxiu.com",
         "verify": "https://m.hongxiu.com/user",
         "logged": "#logout@equal->退出登录",
