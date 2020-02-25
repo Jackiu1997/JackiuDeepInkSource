@@ -1,7 +1,7 @@
 {
     "name": "速阅阁",
     "url": "m.suyueg.com",
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "http://m.suyueg.com/s.php@post->s=${key}&type=articlename",
         "charset": "gbk",
