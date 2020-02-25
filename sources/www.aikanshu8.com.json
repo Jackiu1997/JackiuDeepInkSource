@@ -1,7 +1,7 @@
 {
     "name": "爱看书吧 [飞卢]",
     "url": "www.aikanshu8.com",
-    "version": 103,
+    "version": 104,
     "search": {
         "url": "https://www.aikanshu8.com/modules/article/search.php?searchkey=${key}",
         "charset": "gbk",
