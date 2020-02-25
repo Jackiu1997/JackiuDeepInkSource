@@ -1,7 +1,7 @@
 {
     "name": "168看书网 [刺猬猫]",
     "url": "www.168kanshu.com",
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "https://www.168kanshu.com/modules/article/search.php?action=login&searchkey=${key}",
         "charset": "gbk",
