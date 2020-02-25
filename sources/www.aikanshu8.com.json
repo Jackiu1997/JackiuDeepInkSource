@@ -11,6 +11,8 @@
         "detail": "li:nth-child(1) > a"
     },
     "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
         "cover": "meta[property=og:image]@attr->content",
         "summary": "meta[property=og:description]@attr->content",
         "status": "meta[property=og:novel:status]@attr->content",
