@@ -1,25 +1,20 @@
 {
     "name": "亲小说",
     "url": "www.qinxiaoshuo.com",
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "http://www.qinxiaoshuo.com/search/${key}/1.html",
-        "charset": "utf-8",
-        "list": ".book_item",
-        "name": ".book_info > h3",
-        "author": ".book_info > p:nth-child(2)@replace->作者: ",
-        "cover": "img",
-        "summary": ".book_intro",
+        "list": "#main_box > div.book",
+        "name": ".book_info > div > h3",
+        "author": ".book_info > div > div:nth-child(2)@replace->作者: ",
+        "cover": "a > img",
+        "summary": ".intro",
         "detail": "a"
     },
     "detail": {
-        "name": "#book_info_right > h1",
-        "author": "#book_info_right > div:nth-child(2) > span:nth-child(1) > a",
-        "cover": "img#book_cover",
-        "summary": ".book_intro",
-        "status": "#book_info_right > div:nth-child(2) > span:nth-child(2)",
-        "update": "#book_info_right > div:nth-child(4) > span:nth-child(1)@replace->更新时间：",
-        "lastChapter": "#book_info_right > div:nth-child(4) > span:nth-child(2)@replace->最新章节：",
+        "status": ".show_info > div > div:nth-child(2) > span:nth-child(2)",
+        "update": ".show_info > div > div:nth-child(4) > span:nth-child(1)@replace->更新时间：",
+        "lastChapter": ".show_info > div > div:nth-child(4) > span:nth-child(2)@replace->最新章节：",
         "catalog": ""
     },
     "catalog": {
@@ -34,6 +29,6 @@
     },
     "chapter": {
         "content": "#chapter_content",
-        "page": ".buttons > p > a:matches(下一页)"
+        "page": "div.read_buts > a:matches(下一页)"
     }
 }
