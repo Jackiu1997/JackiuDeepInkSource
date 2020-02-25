@@ -1,7 +1,7 @@
 {
     "name": "百合小说网 [晋江]",
     "url": "www.baihexs.com",
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "https://www.baihexs.com/modules/article/search.php@post->searchkey=${key}&&searchtype=articlename",
         "charset": "gbk",
