@@ -1,7 +1,7 @@
 {
     "name": "速阅阁",
     "url": "m.suyueg.com",
-    "version": 102,
+    "version": 103,
     "search": {
         "url": "http://m.suyueg.com/s.php@post->s=${key}&type=articlename",
         "charset": "gbk",
@@ -26,7 +26,9 @@
     "chapter": {
         "content": "#articlecontent",
         "purify": [
-            "\\(www.suyueg.com =速阅阁\\)"
+            "还在找\"(.+)\"免费小说?",
+            "\\(www.suyueg.com =速阅阁\\)",
+            "百度直接搜索: \"速阅阁\" 速度阅读不等待!"
         ]
     }
 }
