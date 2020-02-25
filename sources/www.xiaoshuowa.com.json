@@ -1,7 +1,7 @@
 {
     "name": "小说娃小说 [飞卢]",
     "url": "www.xiaoshuowa.com",
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "https://www.xiaoshuowa.com/search.html@post->searchtype=all&searchkey=${key}",
         "charset": "utf-8",
