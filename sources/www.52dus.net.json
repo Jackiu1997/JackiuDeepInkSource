@@ -11,6 +11,8 @@
         "detail": ".bookinfo > h4 > a"
     },
     "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
         "cover": "meta[property=og:image]@attr->content",
         "summary": ".bookintromore",
         "status": "meta[property=og:novel:status]@attr->content",
