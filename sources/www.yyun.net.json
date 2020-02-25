@@ -27,7 +27,7 @@
     "chapter": {
         "content": ".novelcontent",
         "filter": [
-            "table"
+            "@table"
         ],
         "purify": [
             "一秒记住【烟云小说】输入地址：m.yyun.net\n",
