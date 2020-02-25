@@ -1,7 +1,7 @@
 {
     "name": "小说娃小说 [飞卢]",
     "url": "www.xiaoshuowa.com",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "https://www.xiaoshuowa.com/search.html@post->searchtype=all&searchkey=${key}",
         "charset": "utf-8",
@@ -12,13 +12,10 @@
         "detail": "h3 > a"
     },
     "detail": {
-        "name": "#info > h1",
-        "author": "#info > p:contains(作 者)@match->(?<=作 者：)(.+)",
-        "cover": "#fmimg > img",
         "summary": "#intro > p:nth-child(1)",
-        "status": "",
-        "update": "#info > p:nth-child(4)@match->(?<=更新：)(.+)",
-        "lastChapter": "#info > p:nth-child(5) > a",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
         "catalog": ""
     },
     "catalog": {
@@ -28,7 +25,11 @@
         "chapter": "a"
     },
     "chapter": {
-        "content": "#content > p",
-        "page": ".bottem2 > a:nth-child(4):matches(下一页)"
+        "content": "#content",
+        "page": ".bottem2 > a:nth-child(4):matches(下一页)",
+        "purify": [
+            "第(.+)章(.+)",
+            "喜欢从大树开始的进化请大家收藏：\\(www.xiaoshuowa.com\\)(.+)小说娃小说网更新速度最快。"
+        ]
     }
 }

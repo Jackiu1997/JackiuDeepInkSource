@@ -1,22 +1,18 @@
 {
     "name": "速阅阁",
     "url": "m.suyueg.com",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "http://m.suyueg.com/s.php@post->s=${key}&type=articlename",
         "charset": "gbk",
         "list": ".sone",
         "name": ".sone > a",
         "author": ".sone > span",
-        "cover": "",
         "detail": ".sone > a"
     },
     "detail": {
-        "name": ".introduce > h",
-        "author": ".bq > span:nth-child(2) > a",
         "cover": ".pic > img",
         "summary": ".intro > p",
-        "status": "",
         "update": ".infotype > p:nth-child(3)@match->(?<=时间：)(.+)",
         "lastChapter": ".infotype > p:nth-child(4) > a",
         "catalog": ".gochapter > a@replace->m.suyueg->www.suyueg"
@@ -28,6 +24,9 @@
         "chapter": "a"
     },
     "chapter": {
-        "content": "#articlecontent"
+        "content": "#articlecontent",
+        "purify": [
+            "\\(www.suyueg.com =速阅阁\\)"
+        ]
     }
 }

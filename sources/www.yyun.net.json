@@ -1,24 +1,21 @@
 {
     "name": "烟云小说 [刺猬猫]",
     "url": "www.yyun.net",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "https://www.yyun.net/modules/article/search.php@post->searchkey=${key}",
         "charset": "gbk",
         "list": "#author > tbody > tr:gt(0)",
         "name": "td:nth-child(1) > a",
         "author": "td:nth-child(3)",
-        "cover": "",
         "detail": "td:nth-child(1) > a"
     },
     "detail": {
-        "name": ".introduce > h1",
-        "author": ".introduce > p.bq > span:nth-child(2)@replace->作者：",
-        "cover": ".pic > img",
-        "summary": ".introduce > p.jj",
-        "status": ".introduce > p.bq > span:nth-child(3)",
-        "update": ".introduce > p.bq > span:nth-child(1)@replace->更新：",
-        "lastChapter": ".introduce > p:nth-child(5) > a > strong",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
         "catalog": ""
     },
     "catalog": {
@@ -31,6 +28,10 @@
         "content": ".novelcontent",
         "filter": [
             "table"
+        ],
+        "purify": [
+            "一秒记住【烟云小说】输入地址：m.yyun.net\n",
+            "\n我们就是过眼云烟的烟云小说网【m.yyun.net】"
         ]
     }
 }

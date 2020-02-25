@@ -1,19 +1,15 @@
 {
     "name": "梧州中文台",
     "url": "www.wzzw.la",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "http://www.wzzw.la/search.htm?keyword=${key}",
-        "charset": "utf-8",
         "list": "#novel-list > ul > li:gt(0)",
         "name": "div:nth-child(2) > a",
         "author": "div:nth-child(4)",
-        "cover": "",
         "detail": "div:nth-child(2) > a"
     },
     "detail": {
-        "name": "meta[property=og:novel:book_name]@attr->content",
-        "author": "meta[property=og:novel:author]@attr->content",
         "cover": "meta[property=og:image]@attr->content",
         "summary": "meta[property=og:description]@attr->content",
         "status": "article > div > div.col-xs-8 > ul > li:nth-child(3)",

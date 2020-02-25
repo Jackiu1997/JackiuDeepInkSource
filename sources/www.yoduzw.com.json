@@ -1,20 +1,17 @@
 {
     "name": "有度中文网",
     "url": "www.yoduzw.com",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "https://www.yoduzw.com/search@post->searchkey=${key}",
         "charset": "gbk",
         "list": "li#hism",
         "name": "h3 > a",
         "author": "em > span:nth-child(4)",
-        "cover": "a > img",
+        "cover": "a > img@attr->_src",
         "detail": "h3 > a"
     },
     "detail": {
-        "name": "meta[property=og:novel:book_name]@attr->content",
-        "author": "meta[property=og:novel:author]@attr->content",
-        "cover": "meta[property=og:image]@attr->content",
         "summary": ".det-info > .pr > div",
         "status": "meta[property=og:novel:status]@attr->content",
         "update": "meta[property=og:novel:update_time]@attr->content",

@@ -1,7 +1,7 @@
 {
     "name": "天下书库",
     "url": "www.txshuku.com",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "https://www.txshuku.com/modules/article/search.php?searchtype=articlename&searchkey=${key}",
         "charset": "gbk",
@@ -9,13 +9,9 @@
         "name": "p.name > a",
         "author": "p:nth-child(3) > span:nth-child(1)@replace->作者：",
         "cover": "a > img",
-        "summary": ".note > p",
         "detail": "p.name > a"
     },
     "detail": {
-        "name": "meta[property=og:novel:book_name]@attr->content",
-        "author": "meta[property=og:novel:author]@attr->content",
-        "cover": "meta[property=og:image]@attr->content",
         "summary": ".playlist > .mlist",
         "status": "meta[property=og:novel:status]@attr->content",
         "update": "meta[property=og:novel:update_time]@attr->content",

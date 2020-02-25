@@ -1,7 +1,7 @@
 {
     "name": "看毛线小说",
     "url": "www.kanmaoxian.com",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "https://www.kanmaoxian.com/modules/article/search.php?searchtype=articlename&searchkey=${key}",
         "charset": "gbk",
@@ -25,6 +25,10 @@
         "chapter": "a"
     },
     "chapter": {
-        "content": ".yd_text2"
+        "content": ".yd_text2",
+        "purify": [
+            "wap.kanmaoxian.com\n",
+            "看1毛2线3中文网\n"
+        ]
     }
 }
