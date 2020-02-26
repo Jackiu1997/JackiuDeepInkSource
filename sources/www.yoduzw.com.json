@@ -1,7 +1,7 @@
 {
     "name": "有度中文网",
     "url": "www.yoduzw.com",
-    "version": 102,
+    "version": 103,
     "search": {
         "url": "https://www.yoduzw.com/search@post->searchkey=${key}",
         "charset": "gbk",
