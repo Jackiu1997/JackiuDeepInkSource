@@ -1,7 +1,7 @@
 {
     "name": "神凑轻小说",
     "url": "www.shencou.com",
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename++selected&searchkey=${key}",
         "charset": "gb2312",
@@ -11,7 +11,9 @@
         "detail": "td:nth-child(1) > a"
     },
     "detail": {
-        "cover": "div:nth-child(1) > a > img",
+        "name": "td:nth-child(1) > span > a@match->(.+)(?=小说)",
+        "author": "td > table > tbody > tr:nth-child(2) > td:nth-child(2)@replace->小说作者：",
+        "cover": "td:nth-child(2) > a:nth-child(1) > img",
         "summary": "tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2)",
         "status": "tr:nth-child(3) > td:nth-child(2)@match->(?<=进度：)(.+)",
         "update": "tr:nth-child(3) > td:nth-child(1)@match->(?<=更新：)(.+)",
