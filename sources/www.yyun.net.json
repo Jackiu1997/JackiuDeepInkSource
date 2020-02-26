@@ -1,7 +1,7 @@
 {
     "name": "烟云小说 [刺猬猫]",
     "url": "www.yyun.net",
-    "version": 102,
+    "version": 103,
     "search": {
         "url": "https://www.yyun.net/modules/article/search.php@post->searchkey=${key}",
         "charset": "gbk",
@@ -11,6 +11,8 @@
         "detail": "td:nth-child(1) > a"
     },
     "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
         "cover": "meta[property=og:image]@attr->content",
         "summary": "meta[property=og:description]@attr->content",
         "status": "meta[property=og:novel:status]@attr->content",
