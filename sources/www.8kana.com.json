@@ -1,7 +1,7 @@
 {
     "name": "不可能de世界",
     "url": "www.8kana.com",
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "https://www.8kana.com/www/search@post->keyword=${key}&type=1",
         "list": ".results_details > div",
