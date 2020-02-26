@@ -1,7 +1,7 @@
 {
     "name": "168看书网 [刺猬猫]",
     "url": "www.168kanshu.com",
-    "version": 102,
+    "version": 103,
     "search": {
         "url": "https://www.168kanshu.com/modules/article/search.php?action=login&searchkey=${key}",
         "charset": "gbk",
@@ -11,6 +11,8 @@
         "detail": ".s1 > a"
     },
     "detail": {
+        "name": "#info > h1",
+        "author": "#info > .options > span.item.red",
         "cover": ".book_info > .pic > img",
         "summary": ".bookinfo_intro",
         "status": "meta[property=og:novel:status]@attr->content",
@@ -29,12 +31,6 @@
         "filter": [
             "@center"
         ],
-        "page": ".chapter_Turnpage > a.next:matches(下一页)",
-        "purify": [
-            "♂浏♂览♂器♂搜索.{\\一♂六♂八♂看♂书\\}：可以快速找到你看的文",
-            "Ψ一&amp;六&amp;八&amp;看&amp;书&amp;Ψ",
-            "\n最新章节前往\n【1】\n【6】\n【8】\n【看】\n【书】\n搜一下就能找到我们哟！168kanshu",
-            "\n♂前往.+?\\{\\一♂六♂八♂看♂书\\}.+?免费看更多完结-好文♂.\\{щщщ·168 kan shu·coＭ\\}"
-        ]
+        "page": ".chapter_Turnpage > a.next:matches(下一页)"
     }
 }
