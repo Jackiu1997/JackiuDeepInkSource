@@ -1,7 +1,7 @@
 {
     "name": "轻小说文库",
     "url": "www.wenku8.net",
-    "version": 102,
+    "version": 103,
     "search": {
         "url": "http://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}",
         "charset": "gbk",
@@ -12,7 +12,7 @@
         "detail": "div:nth-child(1) > a"
     },
     "detail": {
-        "name": "#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(1) > td > table > tbody > tr > td:nth-child(1) > span > b",
+        "name": "td > table > tbody > tr > td:nth-child(1) > span > b",
         "author": "#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2)@replace->小说作者：",
         "cover": "#content > div:nth-child(1) > table:nth-child(4) > tbody > tr > td:nth-child(1) > img",
         "summary": "#content > div:nth-child(1) > table:nth-child(4) > tbody > tr > td:nth-child(2) > span:nth-child(11)",

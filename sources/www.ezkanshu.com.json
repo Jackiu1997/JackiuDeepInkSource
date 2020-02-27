@@ -1,0 +1,38 @@
+{
+    "name": "EZ看书",
+    "url": "www.ezkanshu.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.ezkanshu.com/modules/article/search.php?searchkey=${key}&searchtype=articlename",
+        "charset": "gbk",
+        "list": ".bandListRight > ul > li",
+        "name": ".bandItemLeft > h2",
+        "author": ".bandItemLeft > p.bandPhr > span:nth-child(1)",
+        "cover": ".bandItemLeft > a > img",
+        "detail": ".bandItemLeft > h2 > a"
+    },
+    "detail": {
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".chapterCon > ul > li",
+        "orderBy": 0,
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".articleCon",
+        "filter": [
+            "@a"
+        ],
+        "purify": [
+            "《EZ看书》↘EZ看书↙↘EZ看书↙↘EZ看书↙↘EZ看书↙↘EZ看书↙",
+            "【EZ看書小說網】",
+            "<ter>-->>本章未完，点击下一页继续阅读\\n</ter>"
+        ]
+    }
+}
