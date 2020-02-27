@@ -1,7 +1,7 @@
 {
     "name": "亲小说",
     "url": "www.qinxiaoshuo.com",
-    "version": 102,
+    "version": 103,
     "search": {
         "url": "http://www.qinxiaoshuo.com/search/${key}/1.html",
         "list": "#main_box > div.book",
@@ -30,5 +30,109 @@
     "chapter": {
         "content": "#chapter_content",
         "page": "div.read_buts > a:matches(下一页)"
-    }
+    },
+    "rank": [
+        {
+            "title": "异世界",
+            "url": "http://www.qinxiaoshuo.com/tag/异世界/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "穿越",
+            "url": "http://www.qinxiaoshuo.com/tag/穿越/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title":"冒险",
+            "url": "http://www.qinxiaoshuo.com/tag/冒险/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "魔法",
+            "url": "http://www.qinxiaoshuo.com/tag/魔法/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "校园",
+            "url": "http://www.qinxiaoshuo.com/tag/校园/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "恋爱",
+            "url": "http://www.qinxiaoshuo.com/tag/恋爱/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "纯爱",
+            "url": "http://www.qinxiaoshuo.com/tag/纯爱/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "格斗",
+            "url": "http://www.qinxiaoshuo.com/tag/格斗/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "恐怖",
+            "url": "http://www.qinxiaoshuo.com/tag/恐怖/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "科幻",
+            "url": "http://www.qinxiaoshuo.com/tag/科幻/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "搞笑",
+            "url": "http://www.qinxiaoshuo.com/tag/搞笑/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "异能",
+            "url": "http://www.qinxiaoshuo.com/tag/异能/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "神鬼",
+            "url": "http://www.qinxiaoshuo.com/tag/神鬼/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "战争",
+            "url": "http://www.qinxiaoshuo.com/tag/战争/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "奇幻",
+            "url": "http://www.qinxiaoshuo.com/tag/奇幻/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "格斗",
+            "url": "http://www.qinxiaoshuo.com/tag/格斗/${page}.html",
+            "page": 1,
+            "size": 10
+        },
+        {
+            "title": "侦探",
+            "url": "http://www.qinxiaoshuo.com/tag/侦探/${page}.html",
+            "page": 1,
+            "size": 10
+        }
+    ]
 }
