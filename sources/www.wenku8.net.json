@@ -1,11 +1,11 @@
 {
     "name": "轻小说文库",
     "url": "www.wenku8.net",
-    "version": 103,
+    "version": 104,
     "search": {
         "url": "http://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}",
         "charset": "gbk",
-        "list": "td > div",
+        "list": "div.main > div#centerm > div#content > table.grid > tbody > tr > td > div",
         "name": "div:nth-child(2) > b",
         "author": "div:nth-child(2) > p:nth-child(2)@match->(?<=作者:)(.+)(?=/分类)",
         "cover": "div:nth-child(1) > a > img",
