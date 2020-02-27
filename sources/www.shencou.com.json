@@ -1,7 +1,7 @@
 {
     "name": "神凑轻小说",
     "url": "www.shencou.com",
-    "version": 103,
+    "version": 104,
     "search": {
         "url": "http://www.shencou.com/modules/article/search.php@post->searchtype=articlename+selected&searchkey=${key}&t_btnsearch=%CB%D1%CB%F7",
         "charset": "gb2312",
