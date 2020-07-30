@@ -31,6 +31,9 @@
         "filter": [
             "@center:contains(本章未完)"
         ],
-        "page": "#readbg > p > a:nth-child(5)@attr->href@match->(.+)(?=_)(.+)"
+        "page": "#readbg > p > a:nth-child(5)@attr->href@match->(.+)(?=_)(.+)",
+        "purify": [
+            "（本章未完）"
+        ]
     }
 }
