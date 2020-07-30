@@ -3,8 +3,7 @@
     "url": "www.yoduzw.com",
     "version": 103,
     "search": {
-        "url": "https://www.yoduzw.com/search@post->searchkey=${key}",
-        "charset": "gbk",
+        "url": "https://www.yoduzw.com/search@post->searchkey=${key}&&searchtype=all",
         "list": "li#hism",
         "name": "h3 > a",
         "author": "em > span:nth-child(4)",
@@ -32,6 +31,6 @@
         "filter": [
             "@center:contains(本章未完)"
         ],
-        "page": "#readbg > p > a:matches(下一页)"
+        "page": "#readbg > p > a:nth-child(5)@attr->href@match->(.+)(?=_)(.+)"
     }
 }
