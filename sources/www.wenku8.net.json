@@ -1,24 +1,26 @@
 {
     "name": "轻小说文库",
     "url": "www.wenku8.net",
-    "version": 104,
+    "version": 105,
     "search": {
-        "url": "http://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}",
+        "url": "http://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}@header->cookie:PHPSESSID=u9u41v0ep9hjsaq8l0sjv9h2qj17dk8v",
         "charset": "gbk",
-        "list": "div.main > div#centerm > div#content > table.grid > tbody > tr > td > div",
-        "name": "div:nth-child(2) > b",
+        "list": "#content > table > tbody > tr > td > div",
+        "name": "b",
         "author": "div:nth-child(2) > p:nth-child(2)@match->(?<=作者:)(.+)(?=/分类)",
-        "cover": "div:nth-child(1) > a > img",
-        "detail": "div:nth-child(1) > a"
+        "cover": "img",
+        "detail": "a"
     },
     "detail": {
-        "name": "td > table > tbody > tr > td:nth-child(1) > span > b",
-        "author": "#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2)@replace->小说作者：",
-        "cover": "#content > div:nth-child(1) > table:nth-child(4) > tbody > tr > td:nth-child(1) > img",
-        "summary": "#content > div:nth-child(1) > table:nth-child(4) > tbody > tr > td:nth-child(2) > span:nth-child(11)",
-        "status": "#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(3)@match->(?<=状态：)(.+)",
-        "update": "#content > div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(4)@match->(?<=更新：)(.+)",
-        "lastChapter": "#content > div:nth-child(1) > table:nth-child(4) > tbody > tr > td:nth-child(2) > span:nth-child(6)",
+        "name": "td:nth-child(1) > span > b",
+        "author": "div > table > tbody > tr:nth-child(2) > td:nth-child(2)@match->(?<=：)(.+)",
+        "cover": "td > img",
+        "summary": "#content > div > table:nth-child(4) > tbody > tr > td:nth-child(2)@match->(?<=内容简介：)(.+)",
+        "status": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(3)",
+        "category": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(1)@match->(?<=类：)(.+)",
+        "words": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(5)@match->(?<=：)(.+?)(?=字)",
+        "update": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(4)@match->(?<=：)(.+)",
+        "lastChapter": "td:nth-child(2) > span > a",
         "catalog": "#content > div:nth-child(1) > div:nth-child(6) > div > span:nth-child(1) > fieldset > div > a"
     },
     "catalog": {
