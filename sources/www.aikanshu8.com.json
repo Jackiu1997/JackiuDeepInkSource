@@ -21,7 +21,7 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "#list-chapterAll > .panel-chapterlist > dd",
+        "list": "#list-chapterAll > dl > dd.col-md-3",
         "orderBy": 0,
         "name": "a",
         "chapter": "a"

@@ -4,7 +4,6 @@
     "version": 100,
     "search": {
         "url": "https://www.100ben.net/plus/search.php?keyword=${key}",
-        "charset": "utf-8",
         "list": "dl.recommand > dd > ul > li",
         "name": ".titles",
         "author": ".author@replace->作者： ",
